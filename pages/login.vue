@@ -37,7 +37,7 @@
                                 <input type="radio" name="location" value="Taoyuan"> 小熊 <br>
                                 <input type="radio" name="location" value="Taoyuan"> 綿羊 <br>
                                 <input type="radio" name="location" value="Taoyuan"> 河馬 <br>   -->
-                                   <input type="text"  name=""  class="form-control input_pass"  value=""   placeholder="account">
+                                   <input v-model="email" type="text"  name=""  class="form-control input_pass"  value=""   placeholder="account">
                                 
                             </div><br>
                         </div>
@@ -45,7 +45,7 @@
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
-                            <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+                            <input v-model="password" type="password" name="" class="form-control input_pass" value="" placeholder="password">
                         </div>
                         <div class="form-group">
                             <div class="custom-control custom-checkbox">
@@ -93,6 +93,7 @@
         },
         methods:{
             login:function(){
+                console.log("Data", this.email, this.password)
                 firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
                     function(user){
                         alert('Well done ! You are now connected')
