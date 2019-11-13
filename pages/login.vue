@@ -55,8 +55,8 @@
                         </div>
                     </form>
                 </div>
-                <div class="d-flex justify-content-center mt-3 login_container">
-                    <button type="button" name="button" a href="/home"  class="btn login_btn">Login</button>
+                <div class="d-flex justify-content-center mt-3 login_container">      
+                 <button @click="login"   class="btn login_btn" >Login </button>                 
                 </div>
                 <div class="mt-4">
                     <div class="d-flex justify-content-center links">
@@ -67,12 +67,9 @@
                     </div>
 
 
-
                     <div class="logout">
-                        <button type="button" name="button">logout </button>
-                    </div>
-
-
+                        <button @click.prevent="logout">Logout</button>
+                </div>
 
                 </div>
             </div>
@@ -99,11 +96,22 @@
                 firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
                     function(user){
                         alert('Well done ! You are now connected')
-                        console.log(login_sucessful)
+                        console.log('login_sucessful');
                     },
                     function(err){
                         alert('Oops.'+err.message)
+                        console.log('fai_login');
                     }
+
+                   //firebase.auth().signOut().then(function() {             //logout 不成功
+                        // Sign-out successful.
+                    //    alert('your signout now!')
+               //     console.log('you are sign-out now');
+              //      }).catch(function(error) {
+                        // An error happened.
+                    
+         //       })
+                
           
         
                 )
@@ -112,7 +120,7 @@
         }
     }
 
-</Script>
+</script>
 
 
 
