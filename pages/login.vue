@@ -107,17 +107,6 @@
                         alert('Oops.'+err.message)
                         console.log('fai_login');
                     }
-
-                   //firebase.auth().signOut().then(function() {             //logout 不成功
-                        // Sign-out successful.
-                    //    alert('your signout now!')
-               //     console.log('you are sign-out now');
-              //      }).catch(function(error) {
-                        // An error happened.
-                    
-         //       })
-                
-          
         
                 )
                 // firebase.auth().currentUser()

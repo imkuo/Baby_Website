@@ -69,6 +69,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#">家長回饋單</a>
           </li>
+           <li class="nav-item">
+            <button @click.prevent="logout">Logout</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -151,4 +154,20 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
 
 
 
-</style>>
+</style>
+
+<script>
+import firebase from 'firebase';
+
+export default {
+  method:{
+      logout:function(){
+        firebase.auth().signOut()
+        FirebaseAuth.getInstance().signOut();
+        console.log('logout sucess');
+      }
+    }
+}
+
+
+</script>>

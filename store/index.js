@@ -27,6 +27,8 @@ export const actions = {
         });
       });
   },
+  
+  
   signOut ({ commit }) {
     return fireAuth.signOut()
       .then(() => {
