@@ -60,7 +60,10 @@
                 </div>
                 <div class="mt-4">
                     <div class="d-flex justify-content-center links">
-                        Don't have an account? <a href="/Sign-up" class="ml-2">Sign Up</a>
+                        Don't have an account? <a href="/Sign-up" class="ml-2">Sign Up</a> 
+                    </div>
+                    <div>
+                        user:{{username()}}
                     </div>
                     <div class="d-flex justify-content-center links">
                         <a href="#">Forgot your password?</a>
@@ -98,6 +101,7 @@
                     function(user){
                         alert('Well done ! You are now connected')
                         console.log('login_sucessful');
+                       
                     },
                     function(err){
                         alert('Oops.'+err.message)
@@ -116,8 +120,23 @@
           
         
                 )
+                // firebase.auth().currentUser()
                 //this.$router.replace('home');
-            }
+            },
+
+            logout:function(){
+                 firebase.auth().signOut()
+                //  firebase.auth().currentUser()
+                 console.log('logout sucess ');
+            
+            },
+        username () {
+
+            return (this.$store.state.user) ? this.$store.state.user.email
+            : "N/A";
+         }
+
+
         }
     }
 
