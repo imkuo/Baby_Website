@@ -70,7 +70,8 @@
             <a class="nav-link js-scroll-trigger" href="#">家長回饋單</a>
           </li>
            <li class="nav-item">
-            <button @click.prevent="logout2">Logout</button>
+            <button @click.prevent="logout2"   >Logout </button>
+   
           </li>
         </ul>
       </div>
