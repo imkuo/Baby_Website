@@ -1,14 +1,34 @@
 <template>
-<div class="firstQ_table">
-<div class="firstQ">
-<div class="points_explain"> 
-    <div class="top_word">
+<div class="container">
+
+
+ 
+         <div class="fdata ">
+            <form>
+               <div class="form-group">
+                   <label for="child">服務對象:</label>
+                   <input type="text" class="form-control" id="child">
+           </div>
+            <div class="form-group">
+                <label for="parents">填答人員:</label>
+                <input type="text" class="form-control" id="parents">
+            </div>
+             <div class="form-group">
+                <label for="date">日期:</label>
+                <input type="text" class="form-control" id="date">
+            </div>
+                </form>
+            </div>  <br>
+
+ <div class="top_word"> 
     <p >親愛的家長： <br>
                 感謝您用心陪伴孩子！為了更了解家長對於孩子在寶貝中心的學習，與所有同仁對家庭的服務狀況，請您協助填答以下問題～
     </p>
-    </div>
+ </div>
 
  <p>填答方式:</p>
+
+ <div class="points_explain"> 
 <table class="table table-striped">
   <thead>
     <tr>
@@ -32,17 +52,111 @@
          <td>偶爾能夠</td>
           <td>少部份能夠</td>
            <td>完全不能夠</td>
-    </tr>
-    
+    </tr>  
   </tbody>
 </table> 
 </div>
-<p>請問您認為在寶貝中心服務中，家長能夠參與早期療育的所有過程嘛？<br>
-請依程度填答7~1分</p>
+
+<div class="firstQ">
+<p>1.請問您認為在寶貝中心服務中，家長能夠參與早期療育的所有過程嘛？ 
+請依程度填答7~1分。</p>
+</div>  <br>
+
+<p>1.1 請問您有機會參與孩子的評估項目嗎？</p>
+<div class="firstQA">
+  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+  <p>1.2 請問您有機會提出孩子或家庭的需求與關切事項嗎？</p>
+  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>1.3 請問您有機會對於孩子的療育做出自己的決定嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>1.4 請問您有機會參與孩子擬定『個別化服務計畫』嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+  <p>1.5 請問您有機會參與執行孩子『個別化服務計畫』嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>1.6 請問您覺得自己清楚孩子整接受早期療育的狀況嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+  <p>1.7 請問您能夠參與孩子早期療育的過程嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
 </div>
+
+
+
+
+
 </div>
 
 
 
+
+
+
+
+
+
+
+</div>
 </template>
 
