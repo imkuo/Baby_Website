@@ -1,8 +1,6 @@
 <template>
 <div class="container">
-
-
- 
+     
          <div class="fdata ">
             <form>
                <div class="form-group">
@@ -56,32 +54,36 @@
   </tbody>
 </table> 
 </div>
-
+<br>
+<br>
 <div class="firstQ">
-<p>1.請問您認為在寶貝中心服務中，家長能夠參與早期療育的所有過程嘛？ 
+<p>1.請問您認為在寶貝中心服務中，家長能夠參與早期療育的所有過程嗎？ 
 請依程度填答7~1分。</p>
 </div>  <br>
 
-<p>1.1 請問您有機會參與孩子的評估項目嗎？</p>
-<div class="firstQA">
-  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
-  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
-  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
-  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
-  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
-  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
-  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
-  <br>
-  <br>
 
+<div class="firstQA">
+    <div class ="formgroup">   <!--不確定要加在哪-->
+    <p>1.1 請問您有機會參與孩子的評估項目嗎？</p>
+    <label><input type="radio" name="optradio" id="1-1" value="1" checked>1</label> &nbsp;
+    <label><input type="radio" name="optradio" id="1-1" value="2" checked>2</label> &nbsp;
+    <label><input type="radio" name="optradio"  id="1-1" value="3" checked>3</label>&nbsp;
+    <label><input type="radio" name="optradio"  id="1-1" value="4" checked>4</label>&nbsp;
+    <label><input type="radio" name="optradio"  id="1-1" value="5" checked>5</label>&nbsp;
+    <label><input type="radio" name="optradio"  id="1-1" value="6" checked>6</label>&nbsp;
+    <label><input type="radio" name="optradio"  id="1-1" value="7" checked>7</label>&nbsp;  
+    <br>
+    <br>
+    </div>      <!--不確定要加在哪-->
+  
   <p>1.2 請問您有機會提出孩子或家庭的需求與關切事項嗎？</p>
-  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
-  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
-  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
-  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
-  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
-  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
-  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <label><input type="radio" name="optradio" id="1-2" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" id="1-2" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" id="1-2" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" id="1-2" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" id="1-2" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" id="1-2" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" id="1-2" checked>7</label>&nbsp;  
   <br>
   <br>
 
@@ -137,26 +139,345 @@
   <label><input type="radio" name="optradio" checked>5</label>&nbsp;
   <label><input type="radio" name="optradio" checked>6</label>&nbsp;
   <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+</div>
+<br>
+<br>
+
+
+
+
+<div class="secondQ">
+<p>2.請問您認為家長能夠了解並促進孩子的發展嗎？
+請依程度填答7~1分。</p>
+</div>  <br>
+
+<div class="secondQA">
+  <p>2.1 您有機會了解一般孩子在每個年齡該有的發展狀況嗎？</p>
+  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
   <br>
   <br>
 
+  <p>2.2 請問您有機會了解自己孩子的發展狀況嗎？</p>
+  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>2.3 請問您有機會了解如何在日常生活與孩子互動嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>2.4 請問您有機會了解如何照顧與教養孩子嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+  <p>2.5 請問您了解自己孩子的發展狀況嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>2.6 請問您了解如何促進孩子發展嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
 </div>
+<br>
+<br>
 
 
 
 
 
+
+<div class="thirdQ">
+<p>3.請問您認為家人能夠一起協助孩子的學習與發展嗎？
+請依程度填答7~1分。</p>
+</div> 
+<br>
+
+
+<div class="thirdQA">
+  <p>3.1 家人有機會了解孩子的發展狀況嗎？</p>
+  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+  <p>3.2 家人有機會了解在家中如何協助孩子學習嗎？</p>
+  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>3.3 家人有機會了解在家中如何與孩子互動嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>3.4家人有機會了解您與孩子需要哪些協助嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+  <p>3.5 請問您的家人能有一起協助孩子的學習與發展嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
 </div>
+    <br>
+    <br>
+    
+
+<div class="fourthQ">
+<p>4.請問您認為家長能夠建立自己的支持系統嗎？ 
+請依程度填答7~1分。</p>
+</div>  <br>
+
+<div class="fourthQA">
+  <p>4.1 請問您有機會了解自己跟孩子的相關權益嗎？</p>
+  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+  <p>4.2 請問您有機會了解相關的早期療育資源嗎？</p>
+  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>4.3 請問您有機會參與早期療育團隊的運作嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>4.4 請問您有機會了解有哪些親朋好友可以協助您嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+  <p>4.5 請問您有機會帶著孩子參與自己想要參加的活動嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>4.6 請問您有機會跟其他類似狀況的家長談談嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+  <p>4.7 請問您能夠建立自己的支持系統嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+</div>
+<br>
+<br>
 
 
+<div class="fifthQ">
+<p>5.請問您認為家長是否能夠因應或減低自己所面臨的壓力？ 
+請依程度填答7~1分。</p>
+</div>  <br>
+
+<div class="fifthQA">
+  <p>5.1 請問您有機會了解自己照顧小孩承受壓力的狀態嗎？</p>
+  <label><input type="radio" name="optradio" value="1" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" value="2" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" value="3" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" value="4" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" value="5" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" value="6" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" value="7" checked>7</label>&nbsp;  
+  <br>
+  <br>
 
 
+  <p>5.2 請問您有機會了解自己照顧小孩具備哪些優勢嗎？</p>
+  <label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>5.3 請問您有機會了解如何因應自己的壓力嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+  <br>
+  <br>
+
+<p>5.4 請問您能夠因應或減少自己所面臨的壓力嗎？</p>
+<label><input type="radio" name="optradio" checked>1</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>2</label> &nbsp;
+  <label><input type="radio" name="optradio" checked>3</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>4</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>5</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>6</label>&nbsp;
+  <label><input type="radio" name="optradio" checked>7</label>&nbsp;  
+</div>
+<br>
+<br>
 
 
+<div class="sixthQ">
+<p>6.請問您希望獲得哪些相關活動 課程及資訊呢?
+請依程度填答7~1分。</p>
+</div>  <br>
 
+<div class="sixthQA">
+    <p>您希望寶貝中心辦理～</p>
+    <label><input type="radio" name="optradio" checked>辦親職講座內容為          <input type="text" class="6.1" id="one">  </label>  <br>
+    <label><input type="radio" name="optradio" checked>辦活動例如親子旅遊     <input type="text" class="6.2" id="one">  </label>  <br>
+     <label><input type="radio" name="optradio" checked>其他     <input type="text" class="6.3" id="one">  </label>  <br>
+     <br>
+    <p>您希望為自己多安排哪些活動～</p>
+    <label><input type="radio" name="optradio" checked>多上一些課程，內容為  <input type="text" class="6.4" id="one">  </label>  <br>
+    <label><input type="radio" name="optradio" checked>有人指導孩子個別發展領域之學習技巧與訓練，內容為 <input type="text" class="6.5" id="one">  </label>  <br>
+    <label><input type="radio" name="optradio" checked> 多一些自己的時間，可以做  <input type="text" class="6.6" id="one">  </label>  <br>
+    <label><input type="radio" name="optradio" checked>多一些親子時間，可以做     <input type="text" class="6.7" id="one">  </label>  <br>
+    <label><input type="radio" name="optradio" checked>需要改善親子關係  </label>  <br>
+    <label><input type="radio" name="optradio" checked>需要改善與其他家人關係  </label>  <br>
+    <label><input type="radio" name="optradio" checked>其他    <input type="text" class="6.10" id="one">  </label>  <br>
+</div>
+<br>
 
+<input type="submit"  class="submit" value="確定提交">
+<br>
+<br>
+<p class="end_word">謝謝您的填答，寶貝中心將更努力貼近您～</p>
 
 
 </div>
 </template>
 
+<script>
+import firebase from "firebase";
+export default {
+    name:"submit",
+    methods:{
+        submit(){
+            console.log(1-1);
+        }
+    }      
+};
+</script>
+
+
+<style scoped>
+    p.end_word{
+        text-align: center;
+        font-size: 25px;
+        background:chocolate;
+        color: aliceblue;
+    }
+
+
+</style>
