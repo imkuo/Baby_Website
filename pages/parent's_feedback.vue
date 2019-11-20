@@ -1,4 +1,5 @@
 <template>
+<div class="firstQ_table">
 <div class="firstQ">
 <div class="points_explain"> 
     <div class="top_word">
@@ -37,7 +38,8 @@
 </table> 
 </div>
 <p>請問您認為在寶貝中心服務中，家長能夠參與早期療育的所有過程嘛？<br>
-請依程度填答</p>
+請依程度填答7~1分</p>
+</div>
 </div>
 
 
