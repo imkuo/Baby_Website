@@ -5,7 +5,9 @@ export const state = {
 };
 
 export const mutations = {
-  setUser (state, payload) { state.user = payload; }
+  setUser (state, payload) { 
+    state.user = payload; 
+  }
 };
 
 export const actions = {
@@ -16,15 +18,14 @@ export const actions = {
         console.log("Create User", user);
       });
   },
+
   signInWithEmail ({ commit }, payload) {
     return fireAuth.signInWithEmailAndPassword(payload.email, payload.password)
       .then(() => {
         // eslint-disable-next-line no-console
         console.log("User Signin");
         const user = fireAuth.currentUser;
-        commit("setUser", {
-          email: user.email
-        });
+        commit("setUser", {name:user.email});
       });
   },
   

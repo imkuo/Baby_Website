@@ -1,0 +1,64 @@
+    <!-- Navigation -->
+    <b-navbar class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <!--上方那排欄位整排橫的-->
+      <div class="container">
+        <!--上方選項欄位那排(較窄)-->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">寶貝潛能中心</a>
+        <!--左上方的logo-->
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <ul class="drop-down-menu">
+              <li class="nav-item">
+                <!--每個li為上方每個選項-->
+                <a class="nav-link js-scroll-trigger" href="#">查看學生資料</a>
+                <ul>
+                  <li>
+                    <a href="#">小熊班</a>
+                  </li>
+                  <li>
+                    <a href="#">大象班</a>
+                  </li>
+                  <li>
+                    <a href="#">綿羊班</a>
+                  </li>
+                  <li>
+                    <a href="#">河馬班</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">更改自班資料</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">上傳兒童發展評估</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">查詢兒童發展評估</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">家長回饋單</a>
+            </li>
+            <li class="nav-item">
+              <button @click.prevent="logout2">Logout</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>

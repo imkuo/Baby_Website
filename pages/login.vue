@@ -101,6 +101,7 @@
 <script>
 import firebase from "firebase";
 export default {
+  middleware: 'unauthenticated',
   name: "login",
   data() {
     return {
@@ -110,24 +111,10 @@ export default {
   },
   methods: {
     login: function() {
-      console.log("Data", this.email, this.password);
-      firebase
-        .auth()
-        .signInWithEmailAndPassword(this.email, this.password)
-        .then(
-          function(user) {
-            console.log("user", user);
-            this.$store.commit("setUser", user);
-            alert("Well done ! You are now connected");
-            console.log("login_sucessful");
-          },
-          function(err) {
-            alert("Oops." + err.message);
-            console.log("fai_login");
-          }
-        );
-      // firebase.auth().currentUser()
-      //this.$router.replace('home');
+      let payload = {email:this.email, password:this.password}
+      this.$store.dispatch("signInWithEmail", payload).then(() => {
+          this.$router.push("/home")
+      })
     },
 
     logout: function() {

@@ -33,6 +33,9 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   middleware: 'unauthenticated',
+  mounted() {
+    this.$router.push("/login")
+  },
   components: {
     Logo
   }
