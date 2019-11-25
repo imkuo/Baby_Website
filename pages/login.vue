@@ -100,7 +100,6 @@
 
 <script>
 import firebase from "firebase";
-
 export default {
   name: "login",
   data() {
@@ -110,37 +109,37 @@ export default {
     };
   },
   methods: {
-    login() {
-      this.$store.dispatch("signInWithEmail", {
-        email: this.email,
-        password: this.password
-      })
-      .then(()=>{
-          this.$router.push("/home")
-      });
+    login: function() {
+      console.log("Data", this.email, this.password);
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then(
+          function(user) {
+            console.log("user", user);
+            this.$store.commit("setUser", user);
+            alert("Well done ! You are now connected");
+            console.log("login_sucessful");
+          },
+          function(err) {
+            alert("Oops." + err.message);
+            console.log("fai_login");
+          }
+        );
+      // firebase.auth().currentUser()
+      //this.$router.replace('home');
     },
-    // login:function(){
-
-    //     console.log("Data", this.email, this.password)
-    //     firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
-    //         function(user){
-    //             alert('Well done ! You are now connected')
-    //             console.log('login_sucessful');
-
-    //         },
-    //         function(err){
-    //             alert('Oops.'+err.message)
-    //             console.log('fai_login');
-    //         }
-
-    //     )
-
-    //     // firebase.auth().currentUser()
-    //     //this.$router.replace('home');
-    // },
 
     logout: function() {
-     this.$store.dispatch("signOut");
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$store.commit("setUser", null);
+        });
+      //  firebase.auth().currentUser()
+      console.log("logout sucess ");
+      console.log("user", this.$store.state.user);
     },
     username() {
       return this.$store.state.user ? this.$store.state.user.email : "N/A";
